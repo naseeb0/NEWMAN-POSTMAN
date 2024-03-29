@@ -1,0 +1,16 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run TestCase/NODE-NEWMAN.postman_collection.json -e ENV/Demo-Environment.postman_environment.json  -r cli,htmlextra --reporter-htmlextra-export ./Report/Postmanreport.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "newman": "^6.1.2",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
