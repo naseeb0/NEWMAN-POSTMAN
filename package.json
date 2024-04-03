@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "newman run TestCase/NODE-NEWMAN.postman_collection.json -e ENV/Demo-Environment.postman_environment.json  -r cli,htmlextra --reporter-htmlextra-export ./Report/Postmanreport.html"
+    "test": "newman run TestCase/APIASSIGNMENT.postman_collection.json -e ENV/ContactListDocEnvironment.postman_environment.json  -r cli,htmlextra --reporter-htmlextra-export ./Report/AssignmentReport.html"
   },
   "keywords": [],
   "author": "",
