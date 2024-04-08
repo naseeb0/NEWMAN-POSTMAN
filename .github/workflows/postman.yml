@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: test-report
-          path: ./Report/AssignmentReport.html
+          path: AssignmentReport.html
 
       - name: Deploy report to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v4
