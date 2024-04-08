@@ -1226,7 +1226,7 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Logout Response Check\", ()=>{",
-							"    pm.response.status.to.have(200);",
+							"    pm.response.to.have.status(200);",
 							"})"
 						],
 						"type": "text/javascript",
