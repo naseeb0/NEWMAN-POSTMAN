@@ -31,11 +31,11 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: test-report
-          path: ./Report/AssignmentReport.html
+          path: AssignmentReport.html
 
       - name: Deploy report to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@releases/v4
-        with:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: Report
+        run: |
+          git checkout -b gh-pages
+          git add AssignmentReport.html
+          git commit -m "Add test report"
+          git push origin gh-pages
