@@ -31,11 +31,11 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: test-report
-          path: AssignmentReport.html
+          path: index.html
 
       - name: Deploy report to GitHub Pages
         run: |
           git checkout -b gh-pages
-          git add AssignmentReport.html
+          git add index.html
           git commit -m "Add test report"
           git push origin gh-pages
