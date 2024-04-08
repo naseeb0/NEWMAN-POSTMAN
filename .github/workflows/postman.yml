@@ -31,11 +31,11 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: test-report
-          path: ./Report/AssignmentReport.html
+          path: AssignmentReport.html
 
       - name: Deploy report to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: Report
+          CLEAN: true # Optionally clean the branch before deploying
